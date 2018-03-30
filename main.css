@@ -19,7 +19,7 @@ textarea {
 }
 
 #cover,
-.latest,
+.latest ul,
 .articles {
     display: grid;
     grid-gap: 1em;
@@ -163,7 +163,67 @@ a {
     text-decoration: none;
 }
 
-/* medium devices, breakpoint ~ 760px */
+/* ===============
+   section: latest
+   =============== */
+
+.latest h2 a {
+    color: #ff4422;
+    font-size: 1.9em;
+    line-height: 2em;
+    font-weight: 700;
+    letter-spacing: -0.05em;
+}
+
+.latest-story {
+    position: relative;
+}
+
+a[id^="latest"] {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 75px;
+    padding-top: 75px;
+    background-position: center center;
+    background-size: cover;
+}
+
+#latest-1 {
+    background-image: url("imgs/latest1.jpg");
+}
+
+#latest-2 {
+    background-image: url("imgs/latest2.jpg");
+}
+
+#latest-3 {
+    background-image: url("imgs/latest3.png");
+}
+
+#latest-4 {
+    background-image: url("imgs/latest4.png");
+}
+
+#latest-5 {
+    background-image: url("imgs/latest5.jpg");
+}
+
+#latest-6 {
+    background-image: url("imgs/latest6.jpg");
+}
+
+#latest-7 {
+    background-image: url("imgs/latest7.jpg");
+}
+
+#latest-8 {
+    background-image: url("imgs/latest8.jpg");
+}
+
+/* ===============
+   medium devices, breakpoint ~ 760px
+   =============== */
 
 @media (min-width: 48em) {
     #cover {
@@ -182,7 +242,7 @@ a {
     .article {
         grid-column: 2 / 3;
     }
-    .latest {
+    .latest ul {
         grid-template-columns: 1fr 1fr 1fr;
     }
     .latest h2 {
@@ -209,7 +269,7 @@ a {
     #cover h4 {
         font-size: 1.2em;
     }
-    .latest {
+    .latest ul {
         grid-template-columns: repeat(4, 1fr);
     }
     .latest h2 {
