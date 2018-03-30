@@ -4,7 +4,7 @@ body,
 select,
 input,
 textarea {
-    font: 0.625em/1.4 tahoma, verdana, arial, helvetica, sans-serif;
+    font: 0.625em/1.4 Avalon, sans-serif;
     box-sizing: border-box;
 }
 
@@ -27,7 +27,7 @@ textarea {
 }
 
 #cover {
-    grid-auto-rows: minmax(16em, 1fr);
+    grid-auto-rows: minmax(16em, 26em);
 }
 
 .latest {
@@ -114,27 +114,36 @@ footer {
 #art-1 header,
 #art-2 header {
     position: absolute;
-    top: 30%;
+    bottom: 2em;
     left: 1em;
     vertical-align: baseline;
     z-index: 3;
 }
 
 header h1 {
-    font-size: 5.6em;
+    margin: 0.2em 0;
+    font-size: 2em;
+    line-height: 1em;
 }
 
 header h2 {
-    font-size: 2.8em;
+    margin: 0.2em 0;
+    font-size: 2em;
+    line-height: 1em;
 }
 
 header h3 {
-    font-size: 1.4em;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    font-weight: 100;
+    letter-spacing: -0.3px;
 }
 
 header h4 a,
 header h4 {
-    font-size: 1.2em;
+    margin: 0;
+    font-size: 1em;
     color: #4C4C4D;
 }
 
@@ -159,11 +168,16 @@ a {
 @media (min-width: 48em) {
     #cover {
         grid-template-columns: 2fr 1fr;
-        grid-auto-rows: 26em;
     }
     #main-article {
         grid-column: 1 / 2;
         grid-row: 1 / 3;
+    }
+    #cover h1 {
+        font-size: 4em;
+    }
+    #cover h2 {
+        font-size: 2em;
     }
     .article {
         grid-column: 2 / 3;
@@ -185,6 +199,15 @@ a {
     main {
         width: 1052px;
         margin: 0 auto;
+    }
+    #cover h1 {
+        font-size: 5.6em;
+    }
+    #cover h2 {
+        font-size: 2.8em;
+    }
+    #cover h4 {
+        font-size: 1.2em;
     }
     .latest {
         grid-template-columns: repeat(4, 1fr);
