@@ -19,7 +19,7 @@ textarea {
 }
 
 #cover,
-.latest ul,
+.latest,
 .articles {
     display: grid;
     grid-gap: 1em;
@@ -28,15 +28,6 @@ textarea {
 
 #cover {
     grid-auto-rows: minmax(16em, 26em);
-}
-
-.latest {
-    background: hotpink;
-}
-
-.story {
-    height: 250px;
-    border: 1px solid black;
 }
 
 .articles {
@@ -167,6 +158,10 @@ a {
    section: latest
    =============== */
 
+.latest {
+    margin-left: 1em;
+}
+
 .latest h2 a {
     color: #ff4422;
     font-size: 1.9em;
@@ -176,17 +171,45 @@ a {
 }
 
 .latest-story {
-    position: relative;
+    display: grid;
+    grid-template-columns: 7.5em 1fr;
+    grid-gap: 1em;
 }
 
 a[id^="latest"] {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 75px;
-    padding-top: 75px;
+    grid-row: 1 / 3;
+    max-height: 7.5em;
+    margin: 0.6em 0;
     background-position: center center;
     background-size: cover;
+}
+
+.story-title {
+    margin: 0.6em 0;
+    font-weight: 700;
+    font-size: 1.4em;
+    line-height: 1.2em;
+}
+
+.story-title a {
+    color: #000;
+}
+
+.story-title a:hover {
+    color: #ff4422;
+}
+
+.story-line {
+    padding-left: 0;
+}
+
+.story-line li {
+    display: inline-block;
+    padding-right: 1em;
+    color: #aaa;
+    font-weight: 400;
+    font-size: 1.2em;
+    line-height: 1.4em;
 }
 
 #latest-1 {
@@ -242,11 +265,28 @@ a[id^="latest"] {
     .article {
         grid-column: 2 / 3;
     }
-    .latest ul {
+    .latest {
         grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 3em repeat(minmax(1fr, 25em));
     }
     .latest h2 {
         grid-column: 1 / 4;
+    }
+    .latest-story {
+        grid-template-columns: 1fr;
+        grid-template-rows: 150px 1fr;
+        margin: 1em 0.5em;
+    }
+    a[id^="latest"] {
+        grid-row: 1/2;
+        max-height: 100%;
+    }
+    .latest-story h4 {
+        font-size: 1.6em;
+        line-height: 1.2em;
+    }
+    .story-line li {
+        margin-top: -2em;
     }
     .articles {
         grid-template-columns: 1fr 1fr;
@@ -269,8 +309,12 @@ a[id^="latest"] {
     #cover h4 {
         font-size: 1.2em;
     }
-    .latest ul {
+    .latest {
         grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 3em repeat(minmax(1fr, 270px));
+    }
+    .latest-story {
+        grid-template-rows: 13.5em 1fr;
     }
     .latest h2 {
         grid-column: 1 / 5;
