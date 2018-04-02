@@ -30,11 +30,6 @@ textarea {
     grid-auto-rows: minmax(16em, 26em);
 }
 
-.articles {
-    background: greenyellow;
-    min-height: 600px;
-}
-
 .articles section {
     border: 1px solid black;
 }
@@ -45,9 +40,9 @@ footer {
     background: black;
 }
 
-/* =======
+/* =============
    header - cover
-   ======= */
+   ============= */
 
 #main-article,
 #art-1,
@@ -162,12 +157,18 @@ a {
     margin-left: 1em;
 }
 
-.latest h2 a {
+.latest h2 a,
+.articles h2 a {
     color: #ff4422;
     font-size: 1.9em;
     line-height: 2em;
     font-weight: 700;
     letter-spacing: -0.05em;
+}
+
+.latest h2 a:hover,
+.articles h2 a:hover {
+    color: #000;
 }
 
 .latest-story {
@@ -248,8 +249,58 @@ a[id^="latest"] {
    articles section
    ============== */
 
+.section-popular {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 480px;
+}
+
+#apps .section-popular-img,
+#gear .section-popular-img,
+#tech .section-popular-img,
+#creative .section-popular-img,
+#contributors .section-popular-img,
+#insights .section-popular-img,
+#launch .section-popular-img,
+#world .section-popular-img,
+#distract .section-popular-img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-size: cover;
+    z-index: 1;
+}
+
+#apps .section-popular-link,
+#gear .section-popular-link,
+#tech .section-popular-link,
+#creative .section-popular-link,
+#contributors .section-popular-link,
+#insights .section-popular-link,
+#launch .section-popular-link,
+#world .section-popular-link,
+#distract .section-popular-link {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(224, 196, 196);
+    background: linear-gradient(to bottom, rgba(224, 196, 196, 1) 0%, rgba(255, 255, 255, 0.17130602240896353) 0%, rgba(0, 0, 5, 1) 100%);
+    z-index: 2;
+}
+
+.section-popular header {
+    position: absolute;
+    bottom: 1em;
+    left: 1em;
+    vertical-align: baseline;
+    z-index: 3;
+}
+
 #apps-img-1 {
-    background-image: url(imgs/apps1.jpg);
+    background: url(imgs/apps1.jpg) no-repeat center center;
 }
 
 #apps-img-2 {
