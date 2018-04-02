@@ -244,6 +244,82 @@ a[id^="latest"] {
     background-image: url("imgs/latest8.jpg");
 }
 
+/* ==============
+   articles section
+   ============== */
+
+#apps-img-1 {
+    background-image: url(imgs/apps1.jpg);
+}
+
+#apps-img-2 {
+    background-image: url(imgs/apps2.jpg);
+}
+
+#gear-img-1 {
+    background-image: url(imgs/gear1.jpg);
+}
+
+#gear-img-2 {
+    background-image: url(imgs/gear2.jpg);
+}
+
+#tech-img-1 {
+    background-image: url(imgs/tech1.png);
+}
+
+#tech-img-2 {
+    background-image: url(imgs/tech2.jpg);
+}
+
+#creative-img-1 {
+    background-image: url(imgs/creative1.jpg);
+}
+
+#creative-img-2 {
+    background-image: url(imgs/creative2.jpg);
+}
+
+#contributors-img-1 {
+    background-image: url(imgs/cont1.jpg);
+}
+
+#contributors-img-2 {
+    background-image: url(imgs/cont2.png);
+}
+
+#insights-img-1 {
+    background-image: url(imgs/in1.jpg);
+}
+
+#insights-img-2 {
+    background-image: url(imgs/in2.png);
+}
+
+#launch-img-1 {
+    background-image: url(imgs/launch1.jpg);
+}
+
+#launch-img-2 {
+    background-image: url(imgs/launch2.jpg);
+}
+
+#world-img-1 {
+    background-image: url(imgs/world1.jpg);
+}
+
+#world-img-2 {
+    background-image: url(imgs/world2.png);
+}
+
+#distract-img-1 {
+    background-image: url(imgs/dis1.jpg);
+}
+
+#distract-img-2 {
+    background-image: url(imgs/dis2.jpg);
+}
+
 /* ===============
    medium devices, breakpoint ~ 760px
    =============== */
