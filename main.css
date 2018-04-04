@@ -4,7 +4,7 @@ body,
 select,
 input,
 textarea {
-    font: 0.625em/1.4em Avalon, sans-serif;
+    font: 0.625em Avalon, sans-serif;
     box-sizing: border-box;
 }
 
@@ -314,6 +314,24 @@ a[id^="latest"] {
     font-size: 2em;
     line-height: 1.1em;
     font-weight: 700;
+}
+
+.section-headline {
+    margin: 0;
+    margin-bottom: -0.5em;
+    border-bottom: 1px solid rgb(207, 207, 207);
+    color: #FF4422;
+}
+
+.section-headline a {
+    font-size: 1.3em;
+    line-height: 1.3em;
+    font-weight: 300;
+    color: #555;
+}
+
+.section-headline a:hover {
+    color: #000;
 }
 
 #apps-img-1 {
